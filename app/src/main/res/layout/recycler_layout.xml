@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip">
+
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="83dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dip"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="TODO"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center"
+        android:text="$0"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="42dp"
+        android:layout_toRightOf="@id/value"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/trash"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="-41dp"
+        android:layout_toEndOf="@+id/firstLine"
+        app:srcCompat="@drawable/trash" />
+
+
+</RelativeLayout>
